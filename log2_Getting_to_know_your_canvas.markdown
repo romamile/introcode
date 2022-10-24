@@ -7,14 +7,34 @@ num: 2
 So, you’ve done already so much, and yet we await more from you! In this section (guess what) you’ll learn about the canvas, and how to draw. Learn, prosper, and spread the visuals!
 
 ## Structure of code, part 1
-So, 
+P5.js adds a specific structure to the code that isn't there in vanilla (normal) javascript. This is achieved with prenamed function, that p5.js expect you to define. We will see a few one along the way, but globaly, the structure is as follow:
 
+
+```javascript
+// Root
+
+function setup() {
+	// Is executed only once at the begining
+
+}
+
+function draw() {
+	// Is executed repetitively
+
+}
+```
+
+Many things to explain here! First of all, any lines that starts with `//` is called a comment. A line of code that is not going to be executed, but meant for the coder themselve. A good way to explain to others (or yourself in the future) what is happening in the code. Legibility is very important in bigger project! Secondly, we define two functions (we'll see what exactly is a function later). As explained in the comments, the code in setup is executed once and that's it, while the one in draw is executed after setup and repetitively.
+
+Write the code above in your `script.js` file, and from now on, when you add code, ask yourself if it is meant to be executed only once, or in a loop!
 
 
 ## The coordinate system
 So, tough luck, here no pencil, if you want to draw something, you’ll need to use... maths. Well, at least numbers.
 You will draw using coordinates. Basically, your screen as a grid, full of pixel. In order to pinpoint one particular pixel, you need two pieces of info: at which height of the screen it is and at which width of the screen. Those are coordinates, symbolized as the couple (x,y), x on the horizontal axis, and y on the vertical one. This is in the end a classical two dimensional system. The origin (x=0 and y=0) is on the top left corner of your screen. Positive x goes toward the right, and positive y goes toward the bottom of your screen. Yep, a bit confusing.
 It’ll all make sense (or at least a bit more) when you’ll start drawing shapes. And guess what, it’s the next section!
+
+![Coordinate System](https://romamile.github.io/introcode/assets/grid.jpg)
 
 
 ## Drawing geometric primitives
@@ -26,10 +46,12 @@ Now, what could mean these parameters? One way to find out, which will work in a
 
 You have other functions for other primitives, such as `point(xPosition, yPosition);` that allows you to draw a dot a precise position on screen. A segment is a line that links two dots, implying that you need to give two positions on screen: `line(xPos1, yPos1, xPos2, yPos2);`. If you want to draw an ellipse, you can, by specifying its position and how large and tall it is: `ellipse(xPos, yPos, width, height);`. Note that here the position defines the center of the ellipse, not it upside left corner. Can you imagine how you can draw a circle using this function? (same than drawing a square from the rect function).
 
+![Primitives](https://romamile.github.io/introcode/assets/primitives.jpg)
 
 Here an example of code to sum up all primitives we’ve seen:
 
 ```java
+createCanvas(400, 400);
 line(10,10,10,90);
 rect(8,48,44,4);
 line(10,50,50,50);
@@ -50,6 +72,9 @@ You have three main ways to apply color. First you can apply colors along the ed
 First let’s play with the background, easiest way to test out colors. Calling `background(Red, Green, Blue);` will fill the whole screen with a color where `Red`, `Green` and `Blue` are numerical values defining how much you want of each. For instance for a Red screen: `background(255,0,0);`. How would you create a black or a white screen ? Hard enough to find the Red Green Blue values for clean colors, but what about ... teal? Lucky you, Processing put a color selector in the IDE. Just click in the menu on Tools, then Color Selector.
 
 Now let’s apply those colors to the shapes we created earlier. For that we have two functions, which are used in the same way: `stroke` and `fill`. Stroke define the color we will use from now for the edges of the primitives, and fill defines the color we’ll use for now for the inside of the primitives. We use it the same way as background, with the added parameters of transparency: `stroke(Red, Green, Blue, Alpha); fill(Red, Green, Blue, Alpha);`. In case you don’t want any stroke or any fill then you can call respectively `noStroke()` and `noFill()`. For instance: 
+
+![grayscale](https://romamile.github.io/introcode/assets/grayscale.jpg)
+![colors](https://romamile.github.io/introcode/assets/colors.jpg)
 
 ```java
 background(255, 0, 220);
