@@ -15,7 +15,7 @@ Having the result of your code online is great for sharing and accessibility. In
 
 There are many tools doing such wonders online ([codepen](https://codepen.io), [jsbin]([200~https://jsbin.com/)), the one I'm proposing is [glitch](https://glitch.com). First of all, create an account on glitch, and click on <b>new project</b> on the top right, and select <b>glitch hello website</b>. Congratulation, you've just "coded" your first website, you deserve a break!
 
-![Glitch UI](./assets/glitchUI.png)
+![Glitch UI]{./assets/glitchUI.png}
 
 
 On the left you see the menu, with all your files (and a <b>+</b> to add some more!). On the right you have your file edit interface. On the bottom, you have the menu bar. You can already click on <b>Preview</b> and then on <b>Open preview pane</b> which will preview whatever you're doing in your project. On the top right, you will see <b>Share</b>. Click on that button, and then invite some projects members. Anybody you would want to collaborate with, and ... at least me: @romamile! This way I'll be able to access your code and help you directly, even when not physicaly present.
@@ -24,13 +24,11 @@ We are going to use glitch as a
 
 Here we'll code as cooking. You'll discover a lot of new ingredients. It's normal to be a bit afraid to use them at first. The way we'll use to get to know them is to use them. More and more. Don't be afraid of making mistakes, we promise you, you can't break anything.
 
-## 2) 4 paths of knowledge:
- * Skills. Tech skills.
- * Possibilities. Input, Output, Brains.
- * Scenography. The physical part of the virtual
- * Stylisation. Let's make my art mine. 
+## Our weapons of choice
 
-## 3) Our weapon of choixe
+So, web development. Usualy, this means HTML, CSS and Javascript. HTML is meant to be the content of your webpage, and its structure. CSS is meant to be how you display that content, the style of the page. And Javascript is meant for... everything else! A lot of things that CSS can do now were only possible with Javascript back in the days. Nowadays, Javascript is pretty much on par with most standard development language. Not in "how you do things" but more in "what things you can do". 
+
+Since we are not interested in a standard webpage, we'll try to get rid of HTML and CSS as soon as possible.
 
 We'll be using P5JS Javascript. It's great, trust us. Long story short, it's taking inspiration from Processing, and inherit its ease of usage and utter fun to play with. Add to that a little present barely ever found in programming language, and there you have why we decided upon it.
 
