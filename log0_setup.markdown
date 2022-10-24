@@ -28,10 +28,35 @@ Here we'll code as cooking. You'll discover a lot of new ingredients. It's norma
 
 So, web development. Usualy, this means HTML, CSS and Javascript. HTML is meant to be the content of your webpage, and its structure. CSS is meant to be how you display that content, the style of the page. And Javascript is meant for... everything else! A lot of things that CSS can do now were only possible with Javascript back in the days. Nowadays, Javascript is pretty much on par with most standard development language. Not in "how you do things" but more in "what things you can do". 
 
-Since we are not interested in a standard webpage, we'll try to get rid of HTML and CSS as soon as possible.
-
-We'll be using P5JS Javascript. It's great, trust us. Long story short, it's taking inspiration from Processing, and inherit its ease of usage and utter fun to play with. Add to that a little present barely ever found in programming language, and there you have why we decided upon it.
-
+Since we are not interested in a standard webpage, we'll try to get rid of HTML and CSS as soon as possible in order to focus on Javascript. Specificaly, we'll be using a library for Javascript. Libraries are blocks of code that somebody else has already coded, for you to reuse. Very very neat shortcuts, and allows you to be much more productive, without doing everything from scratch! In this course, we will be using (p5.js)[https://p5js.org/] a Javascript library inspired from (Processing)[https://www.processing.org] a wonderful Java library, one of the forefather of creative coding!
 While it won't be of use right now, you might want to get [the reference page](https://p5js.org/reference/) kept open somewhere. Good for inspiration, to check examples, and to learn about stuff.
 
-And now for the most important, our lovely lively editor: [block builder](http://blockbuilder.org/). The little gem we talked earlier is called "hot reloading". This means that whenever you change your code, the result is updated live. While this might seem a defacto situation, it is not in most of user cases. Of course, this solution is not the best on each aspect, but for beginners it is god sent.
+# Setting up our environement, at last!
+Open back your glitch project, and open the `index.html` file. Delete everything, and copy the block of code bellow (only time you're allowed to copy paste, so enjoy!):
+
+```html
+<html>
+
+  <head>
+    <title>p5js Template</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.4.13/p5.js"></script>
+    <script src="/script.js" defer></script>
+  </head>
+ 
+  <body style="padding:0px">
+  </body>
+ 
+</html>
+```
+
+Our focuse is not on HTML or css, so we'll be quick (feel free to skip that). HTML is not a classic programing language, in that it's more a structure than a set of instructions. It is based on XML (yet another language...) and use tags. Those little words between `<` and `>`. Long story short, the most important things to know about them is that if you open a tag you then need to close it (same name, with a `/` just before the name for the closing one. So like `<html>` and `</html>`.
+ 
+In order of what we're seeing:
+ 1. First, with the `<html>` tag, we... define an html document. Fair.
+ 2. Then the header `<head>` defines some global info about the page. Here it defines...
+ 3. ...with `<title>` the title of the page, and with `<script>` some code to import. The first is the library, the second will be our own code, in a separate file named `script.js`
+ 4. Last we have `<body>` where our content would be, if we had any! We just add some style to make it appear even more bland than it would otherwise.
+
+Now, the result should be a wonderful white page. All that for that? Yes, a clean blank page is the perfect canvas to fill up! So look at the left menu and open up `script.js`, and see you in next section!
+
+
