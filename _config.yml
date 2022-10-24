@@ -1,0 +1,6 @@
+title: Food&Code Workshop
+baseurl: http://foodandcode.github.io/workshop
+
+pygments: true
+
+permalink: title.html
