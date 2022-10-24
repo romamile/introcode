@@ -15,7 +15,7 @@ Having the result of your code online is great for sharing and accessibility. In
 
 There are many tools doing such wonders online ([codepen](https://codepen.io), [jsbin]([200~https://jsbin.com/)), the one I'm proposing is [glitch](https://glitch.com). First of all, create an account on glitch, and click on <b>new project</b> on the top right, and select <b>glitch hello website</b>. Congratulation, you've just "coded" your first website, you deserve a break!
 
-![Glitch UI](./assets/glitchUI.png)
+![Glitch UI](assets/glitchUI.png)
 
 
 On the left you see the menu, with all your files (and a <b>+</b> to add some more!). On the right you have your file edit interface. On the bottom, you have the menu bar. You can already click on <b>Preview</b> and then on <b>Open preview pane</b> which will preview whatever you're doing in your project. On the top right, you will see <b>Share</b>. Click on that button, and then invite some projects members. Anybody you would want to collaborate with, and ... at least me: @romamile! This way I'll be able to access your code and help you directly, even when not physicaly present.
