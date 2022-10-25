@@ -111,7 +111,7 @@ function setup() {
   createCanvas(400, 400);
 	background(255, 0, 0);
 	fill(0, 0, 255);
-	rectangle(10, 10, 50, 50);
+	rect(10, 10, 50, 50);
 }
 ```
 Wonderful. It is good to imagine `fill`/`stroke`/`tint` as applying a specific color to a brush that you're then going to use to draw the next shapes. So if you want two blue rectangles, and then a green circle a little bit transparent, you would write:
@@ -122,8 +122,8 @@ function setup() {
 	background(0, 0, 0);
 
 	fill(0, 0, 255);
-	rectangle(10, 10, 50, 50);
-	rectangle(100, 200, 80, 80);
+	rect(10, 10, 50, 50);
+	rect(100, 200, 80, 80);
 
 	fill(0, 255, 0, 80);
 	ellipse(200, 200, 100, 100);
