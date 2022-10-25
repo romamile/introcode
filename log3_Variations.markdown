@@ -13,7 +13,7 @@ Up until now, we only put static numbers for the parameters of our drawing funct
 
 
 ```javascrit
-	// We definei/declare the variable here
+	// We define/declare the variable here
 let myVariable;
 
 function setup() {
@@ -37,7 +37,7 @@ function draw() {
 
 The magic keyword here is `let`, which allows you to create a variable. A variable is three things:
  * A **name**, here "myVariable";
- * A current **value**, its content, here "0" at the begining
+ * A current **value**, its content, here "0" at the beginning
  * A **type** which is a way to read the content (bits -0/1- in memory, Javascript doesn't make you declare type, it's automated depending on the value you're using. Here it's a number.
 
 Beware of the vocabulary in the comments. You first *define/declare* a variable to be able to use it, then you *instantiate* it to assure that there is a value (and not the void!) on it, and then you can *update/use* the variable in your code.
@@ -87,7 +87,7 @@ function draw() {
 }
 ```
 
-Last, I've separated our `draw` loop in two subsections, *update* and *draw*. It's not necessary, but it's a lovely way to organise your code. First you update your information, and then you display it.
+Last, I've separated our `draw` loop in two subsections, *update* and *draw*. It's not necessary, but it's a lovely way to organize your code. First you update your information, and then you display it.
 
 
 ## Variation through time
@@ -96,7 +96,7 @@ Variable are amazing, but if you want to control a bit better your movement, you
 Let's use that new function to control the position/size of our shapes! Beware, now that we want to have some evolving result, we want to code inside of `draw` instead of `setup`!
 
 
-```javascrit
+```javascript
 function draw() {
   	background(0,0,0);
   	rect(millis(), 10, 50, 50);
@@ -175,7 +175,7 @@ function keyPressed() {
 ```
 Now, it's lovely to trigger something at a key press, but it would be even better if different key could do different things. For that we would need to test some new pre-named variable that would know which key we are typing, and to check if it fits the key that was meant to trigger a behavior. So we need two things. That new variable, and that `if` test.
 
-That pre-named variable is called `key` and only accessible in the keyPressed function (and other function alike). In order what is stored in that value, we're going to display it in the console. A very lovely way to check what's happening in your program. For that, we use `console.log()`, don't worry too much about that weird dot for now.
+That pre-named variable is called `key` and only accessible in the `keyPressed` function (and other function alike). In order what is stored in that value, we're going to display it in the console. A very lovely way to check what's happening in your program. For that, we use `console.log()`, don't worry too much about that weird dot for now.
 
 ```javascript
 function keyPressed() {
@@ -190,7 +190,7 @@ BONUS: if you want to access special keys, you might want to look into the pre-n
 
 ## Variation through testing
 
-We know variable, we know functions. And now, we are entering the main aspect of computation, the *why* of why is it called computation. The `if` keyword! What it does is as brilliant as it is simple: it tests for something, and do one thing if it's true (and optionaly another if it's false). This is choice, the basic of artificial reasoning. After the if, a condition is tested among parenthesis, and among curly brackets (as with functions), the block of code that is to be executed. If you want to do something when something is not valid, then use *else* as done below. You can test many things with conditions. Equality with *===*, comparison with *<* and *>*... many more that you'll discover another time!
+We know variable, we know functions. And now, we are entering the main aspect of computation, the *why* of why is it called computation. The `if` keyword! What it does is as brilliant as it is simple: it tests for something, and do one thing if it's true (and optionally another if it's false). This is choice, the basic of artificial reasoning. After the if, a condition is tested among parenthesis, and among curly brackets (as with functions), the block of code that is to be executed. If you want to do something when something is not valid, then use *else* as done below. You can test many things with conditions. Equality with *===*, comparison with *<* and *>*... many more that you'll discover another time!
 
 
 ```javascript
