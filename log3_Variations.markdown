@@ -45,7 +45,7 @@ Beware of the vocabulary in the comments. You first *define/declare* a variable 
 We will see later different types, but for now, let's keep with numbers. You can use more or less all mathematical operation that you can imagine:
 
 
-```javascrit
+```javascript
 let myVaribable, a, b;
 
 function setup() {
@@ -118,7 +118,7 @@ The point here is to experiment. You don't need to understand something to exper
 
 
 
-## Variation through mouse
+## Variation through randomness
 Randomness is awesome. Or should I say, it’s seen as awesome. People look for patterns in everything, and project over the simplest or most random things! In p5.js, the basic function for randomness is the well named `rando)` function. You can call it with one parameter or two, as follow:
 
 ```javascript
