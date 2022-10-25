@@ -48,6 +48,7 @@ For instance, if I want to draw a rectangle in p5.js, I write:
 
 ```javascript
 function setup() {
+  createCanvas(400, 400);
 	rect(10, 10, 50, 50);
 }
 ```
@@ -60,6 +61,7 @@ Other primitives behave in similar ways:
 
 ```javascript
 function setup() {
+  createCanvas(400, 400);
 	line(10,10,10,90);       // Defines two coordinates in order, and join them in a line
 	ellipse(75,25,10,10);    // Defines the center, and radius of the ellipse
 	point(75,25);            // Defines a single position and draws a dot
@@ -81,6 +83,7 @@ function preload() {
 }
 
 function setup() {
+  createCanvas(400, 400);
   // Bellow is the line of code needed to display the image.
   // First the name of the image, then position along X and Y axis, then width and height  
   image(img,0,0,400,200);
@@ -105,6 +108,7 @@ All four functions are behaving the same way. They expect 3 parameters, in order
 
 ```javascript
 function setup() {
+  createCanvas(400, 400);
 	background(255, 0, 0);
 	fill(0, 0, 255);
 	rectangle(10, 10, 50, 50);
@@ -114,6 +118,7 @@ Wonderful. It is good to imagine `fill`/`stroke`/`tint` as applying a specific c
 
 ```javascript
 function setup() {
+  createCanvas(400, 400);
 	background(0, 0, 0);
 
 	fill(0, 0, 255);
