@@ -56,7 +56,7 @@ In this case, they correspond (in order) to position on the X axis, position on 
 
 Other primitives behave in similar ways:
 
-```java
+```javascript
 line(10,10,10,90);       // Defines two coordinates in order, and join them in a line
 ellipse(75,25,10,10);    // Defines the center, and radiuses of the ellipse
 point(75,25);            // Defines a single position and draws a dot
@@ -85,7 +85,7 @@ function setup() {
 
 
 ## Colors
-So, now you know to draw, let release the full spectrum of your creation by adding colors! The classic separation of color in computer science is over four components: Red, Green & Blue (or RGB), with transparency (or alpha). Each component is an integer (a number with no value after the comma,  no fraction part, no decimals; such as 0, 3, 34 or -20) between 0 and 255 (+1 to the person that guesses why 355 ;) ). 
+So, now you know to draw, let release the full spectrum of your creation by adding colors! The classic separation of color in computer science is over four components: Red, Green & Blue (or RGB), with transparency (or alpha). Each component is an integer (a number with no value after the comma,  no fraction part, no decimals; such as 0, 3, 34 or -20) between 0 and 255 (+1 to the person that guesses why 255 ;) ). 
 
 ![grayscale](https://romamile.github.io/introcode/assets/grayscale.jpg)
 
@@ -98,21 +98,25 @@ We have four main ways to apply color. You can apply colors:
 All four functions are behaving the same way. They expect 3 parameters, in order: Red, Blue, Green. And all but `background` can be used as well with a fourth parametre: transparency. For instance, for a red background with a blue rectangle:
 
 ```javascript
-background(255, 0, 0);
-fill(0, 0, 255);
-rectangle(10, 10, 50, 50);
+function setup() {
+	background(255, 0, 0);
+	fill(0, 0, 255);
+	rectangle(10, 10, 50, 50);
+}
 ```
 Wonderful. It is good to imagine `fill`/`stroke`/`tint` as applying a specific color to a brush that you're then going to use to draw the next shapes. So if you want two blue rectangles, and then a green circle a little bit transparent, you would write:
 
 ```javascript
-background(0, 0, 0);
+function setup() {
+	background(0, 0, 0);
 
-fill(0, 0, 255);
-rectangle(10, 10, 50, 50);
-rectangle(100, 200, 80, 80);
+	fill(0, 0, 255);
+	rectangle(10, 10, 50, 50);
+	rectangle(100, 200, 80, 80);
 
-fill(0, 255, 0, 80);
-ellipse(200, 200, 100, 100);
+	fill(0, 255, 0, 80);
+	ellipse(200, 200, 100, 100);
+}
 ```
 
 Oh, and if you want no stroke (or fill) for a specific shape, you can then call `noStroke()` (or `noFill()`). Also, if you want your shape to be totally seen, with no transparency, it means you want an alpha to be maximum (in our case, 255).
