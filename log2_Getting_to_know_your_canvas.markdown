@@ -79,7 +79,7 @@ let img;
 
 // Another pre-named function used by p5.js!
 function preload() {
-  img = loadImage("http://foodandcode.github.io/assets/images/footer_back.png");
+  img = loadImage("https://www.open.ac.uk/research/sites/www.open.ac.uk.research/files/news/ThinkstockPhotos-647269852-Planet-Mars.jpg");
 }
 
 function setup() {
