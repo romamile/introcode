@@ -72,14 +72,14 @@ Even if basic, you’ve learn a few tools that allow you to express yourself. Wh
 
 
 ## Drawing Images
-Images behave in a very similar way to rectangle (you define where they are displayed, and their width and height). One big difference is that they need to be downloaded somehow! When you don't have too many of them, the easiest way in p5.js is to preload them.
+Images behave in a very similar way to rectangle (you define where they are displayed, and their width and height). One big difference is that they need to be downloaded somehow! When you don't have too many of them, the easiest way in p5.js is to preload them. Let's first add a picture as an asset. On the left menu, you can see the *assets* button. Click on it, you will have a new central panel. In this panel, on the top, click on *upload an asset*, then select the picture you want. Then click on the newly created asset, on the bottom, you will see its link similar in fashion to *https://cdn.glitch.global/d5f7cddb-2f4f-4466-8f1f-05574f03fe9c/WipEoutCover.jpg?v=1666704176460*. Copy that link, and replace it it in the code bellow:
 
 ```javascript
 let img;
 
 // Another pre-named function used by p5.js!
 function preload() {
-  img = loadImage("https://www.open.ac.uk/research/sites/www.open.ac.uk.research/files/news/ThinkstockPhotos-647269852-Planet-Mars.jpg");
+  img = loadImage("__THE LINK FROM YOUR ASSET__");
 }
 
 function setup() {
