@@ -30,7 +30,7 @@ So, web development. Usualy, this means HTML, CSS and Javascript. HTML is meant 
 Since we are not interested in a standard webpage, we'll try to get rid of HTML and CSS as soon as possible in order to focus on Javascript. Specificaly, we'll be using a library for Javascript. Libraries are blocks of code that somebody else has already coded, for you to reuse. Very very neat shortcuts, and allows you to be much more productive, without doing everything from scratch! In this course, we will be using (p5.js)[https://p5js.org/] a Javascript library inspired from (Processing)[https://www.processing.org] a wonderful Java library, one of the forefather of creative coding!
 While it won't be of use right now, you might want to get [the reference page](https://p5js.org/reference/) kept open somewhere. Good for inspiration, to check examples, and to learn about stuff.
 
-# Setting up our environement, at last!
+## Setting up our environement, at last!
 Open back your glitch project, and open the `index.html` file. Delete everything, and copy the block of code bellow (only time you're allowed to copy paste, so enjoy!):
 
 ```html
