@@ -7,14 +7,14 @@ num: 2
 So, you’ve done already so much, and yet we await more from you! In this section (guess what) you’ll learn about the canvas, and how to draw. Learn, prosper, and spread the visuals!
 
 ## Structure of code, part 1
-P5.js adds a specific structure to the code that isn't there in vanilla (normal) javascript. This is achieved with prenamed function, that p5.js expect you to define. We will see a few one along the way, but globaly, the structure is as follow:
+P5.js adds a specific structure to the code that isn't there in vanilla (normal) JavaScript. This is achieved with pre-named function, that p5.js expect you to define. We will see a few one along the way, but globally, the structure is as follow:
 
 
 ```javascript
 // Root
 
 function setup() {
-	// Is executed only once at the begining
+	// Is executed only once at the beginning
   createCanvas(400, 400);
 
 }
@@ -26,7 +26,7 @@ function draw() {
 ```
 
 Many things to explain here! 
- * Any lines that starts with `//` is called a comment. A line of code that is not going to be executed, but meant for the coder themselve. A good way to explain to others (or yourself in the future) what is happening in the code. Legibility is very important in bigger project!
+ * Any lines that starts with `//` is called a comment. A line of code that is not going to be executed, but meant for the coder themself. A good way to explain to others (or yourself in the future) what is happening in the code. Legibility is very important in bigger project!
  * Here we defined two functions (we'll see what exactly is a function later). As explained in the comments, the code in setup is executed once and that's it, while the one in draw is executed after setup and repetitively.
  * And we call a function (we ask to execute the code inside of it) called `createCanvas` which will define our drawing area. In order to call it, we just add `()` after its name!
 
@@ -34,7 +34,7 @@ Write the code above in your `script.js` file, and from now on, when you add cod
 
 
 ## The coordinate system
-So, tough luck, here no pencil, if you want to draw something, you’ll need to use... maths. Well, at least numbers.
+So, tough luck, here no pencil, if you want to draw something, you’ll need to use... math. Well, at least numbers.
 You will draw using coordinates. Basically, your screen as a grid, full of pixel. In order to pinpoint one particular pixel, you need two pieces of info: at which height of the screen it is and at which width of the screen. Those are coordinates, symbolized as the couple (x,y), x on the horizontal axis, and y on the vertical one. This is in the end a classical two dimensional system. The origin (x=0 and y=0) is on the top left corner of your screen. Positive x goes toward the right, and positive y goes toward the bottom of your screen. Yep, a bit confusing.
 It’ll all make sense (or at least a bit more) when you’ll start drawing shapes. And guess what, it’s the next section!
 
@@ -52,7 +52,7 @@ function setup() {
 }
 ```
 
-Here again, we are calling a function, this time we have stuff between the parenthesis, numbers separated by commas. Those are called *parameters*, information that we feed the function, in order to parametrise its behavior. They are the input of the function. Now, each parametre has a different role. I could tell you, but even better if you manage to guess it by exploring! Try to change their value, and see how that affect your rectangle on screen, look at its position and its size. Playing with code (parameters, functions...) and seeing the result is a fondamental part of exploring and learniing about code. This is a very freeing aspect of code, I hope you will learn to enjoy it!
+Here again, we are calling a function, this time we have stuff between the parenthesis, numbers separated by commas. Those are called *parameters*, information that we feed the function, in order to parametrize its behavior. They are the input of the function. Now, each parameter has a different role. I could tell you, but even better if you manage to guess it by exploring! Try to change their value, and see how that affect your rectangle on screen, look at its position and its size. Playing with code (parameters, functions...) and seeing the result is a fundamental part of exploring and learning about code. This is a very freeing aspect of code, I hope you will learn to enjoy it!
 
 In this case, they correspond (in order) to position on the X axis, position on the Y axis, width, and height.
 
@@ -61,7 +61,7 @@ Other primitives behave in similar ways:
 ```javascript
 function setup() {
 	line(10,10,10,90);       // Defines two coordinates in order, and join them in a line
-	ellipse(75,25,10,10);    // Defines the center, and radiuses of the ellipse
+	ellipse(75,25,10,10);    // Defines the center, and radius of the ellipse
 	point(75,25);            // Defines a single position and draws a dot
 }
 ```
@@ -75,7 +75,7 @@ Images behave in a very similar way to rectangle (you define where they are disp
 ```javascript
 let img;
 
-// Another prenamed function used by p5.js!
+// Another pre-named function used by p5.js!
 function preload() {
   img = loadImage("http://foodandcode.github.io/assets/images/footer_back.png");
 }
@@ -101,7 +101,7 @@ We have four main ways to apply color. You can apply colors:
  * to an image (`tint`)
  * to the whole canvas (`background`)
 
-All four functions are behaving the same way. They expect 3 parameters, in order: Red, Blue, Green. And all but `background` can be used as well with a fourth parametre: transparency. For instance, for a red background with a blue rectangle:
+All four functions are behaving the same way. They expect 3 parameters, in order: Red, Blue, Green. And all but `background` can be used as well with a fourth parameter: transparency. For instance, for a red background with a blue rectangle:
 
 ```javascript
 function setup() {
