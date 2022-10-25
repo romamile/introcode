@@ -62,7 +62,6 @@ P5.js allows direct access of the position of the mouse, which makes using them 
 function draw() {
     background(0,0,0);
 
-		// Look how much we can combine functions inside one another!
     rect(mouseX, mouseY, 50, 50);
 }
 ```
