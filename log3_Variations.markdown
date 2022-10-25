@@ -138,7 +138,7 @@ rect(random(width), random(height),50,50);
 
 Another way to add variation is for yourself to be in control of what's happening! For that to happen, you need to feed information to the computer through controllers. Mouse, keyboard, touch-pads, mic, camera... A lot of possibilities! For now, let's look at mouse & keyboard.
 
-P5.js allows direct access of the position of the mouse, which makes using them pretty easy!
+P5.js allows direct access of the position of the mouse, through pre-named variable `mouseX` and `mouseY`. Don't try to modify those values, they are only for being read/used!
 
 ```javascript
 function draw() {
@@ -151,7 +151,7 @@ function draw() {
 As easy as that! Try to apply that to different parameters of your code. If you want to trigger something (updating a value, drawing something, ...) you can do that with yet another pre-named function from p5.js called `mousePressed`, fitting name.
 
 ```javascript
-void mousePressed() {
+function mousePressed() {
    //Do something when the mouse is pressed.
 
 	 fill(255, 255, 255, 20);
@@ -163,42 +163,52 @@ void mousePressed() {
 ```
 
 
-## TEMP KEYBOARD + IF
+## Variation through keyboard
 
-- keyPressed is only called when you press a key on your keyboard
-
-In order to use that function, you define it the same way you did for setup  and draw. Just write outside of any other function:
-
-```java
-void keyPressed() {
-   //Do something when the key is pressed.
-}
-```
-
-Whatever code you'll put there (drawing something, changing a color, calling other functions etc. etc.), it'll be executed when you press a key. Now of course, you'll want to have more precision in the selection of the key. That requires some stuff we'll see later on in the workshop (even more that the emphasis here is more on generative art than interactive art, that last part will be for another workshop!). One function that you can call by the press of a button that will be pretty useful is the `saveFrame(nameOfFile)` function. The name says it all: it save the frame as a picture in a file you decide the name of. These files are in your sketch directory, easily accessible from your Processing window by clicking on the menu *Sketch* -> *Show Sketch Folder*.
-
-
-Another couple of functions, **keyPressed** & **keyTyped** for classic keys and control keys. But among those function, a most important new keyword: **if**. The base of computation. Thesis could be written on it, its importance, what it means, what it represents. It's the atom of the computational world. What it does is test for something, and do one thing if it's true (and optionaly another if it's false). This is the basic of artificial reasoning. After the if, a condition is tested among parenthesis, and among curly brackets (as with functions), the block of code needed to be executed. If you want to do something when something is not valid, then use *else* as done below. You can test many things with conditions. Equality with *===*, comparison with *<* and *>*... many more that we'll discover another time!
-
-Last: key and keycodes are the value of the key last types. Try it out a bit, it'll make way more sense that way than reading a wall of text.
+Unsurprisingly, we have a similar function for whenever we press a key on the keyboard:
 
 ```javascript
-   function keyPressed() {
-      if (keyCode === LEFT_ARROW) {
-         background(255,random(255), 255);
-            //keyCodes: https://p5js.org/reference/#/p5/keyCode 
-      }
-  }
-
-   function keyTyped() {
-      if (key === 'a') {
-         background(255,0, 255);
-      } else if (key === 'b') {
-         background(255,255, 255);
-      }
+function keyPressed() {
+   //Do something when a key is pressed.
 
 }
 ```
+Now, it's lovely to trigger something at a key press, but it would be even better if different key could do different things. For that we would need to test some new pre-named variable that would know which key we are typing, and to check if it fits the key that was meant to trigger a behavior. So we need two things. That new variable, and that `if` test.
 
-  * You can check out (or ask us) about other function involoved with the mouse and keyboard:  **mouseMoved**, **mousePressed**, **mouseReleased**, **keyReleased**...
+That pre-named variable is called `key` and only accessible in the keyPressed function (and other function alike). In order what is stored in that value, we're going to display it in the console. A very lovely way to check what's happening in your program. For that, we use `console.log()`, don't worry too much about that weird dot for now.
+
+```javascript
+function keyPressed() {
+		console.log(key);
+}
+```
+
+Great, we're logging something. But... where? To see it, you need to open up your console, in your webdev tools. Depending on navigators, it could be opened up with *Ctr+Shift+I* or *Ctrl+Shift+J*. Once it's open, you will see a few tab in that new panel, click on *console*. And type away in you web app, you should see letters appearing in the console!
+
+BONUS: if you want to access special keys, you might want to look into the pre-named variable `keyCode`!
+
+
+## Variation through testing
+
+We know variable, we know functions. And now, we are entering the main aspect of computation, the *why* of why is it called computation. The `if` keyword! What it does is as brilliant as it is simple: it tests for something, and do one thing if it's true (and optionaly another if it's false). This is choice, the basic of artificial reasoning. After the if, a condition is tested among parenthesis, and among curly brackets (as with functions), the block of code that is to be executed. If you want to do something when something is not valid, then use *else* as done below. You can test many things with conditions. Equality with *===*, comparison with *<* and *>*... many more that you'll discover another time!
+
+
+```javascript
+function keyPressed() {
+			//keyCodes: https://p5js.org/reference/#/p5/keyCode 
+		if (keyCode === LEFT_ARROW) {
+			 background(255,random(255), 255);
+		}
+}
+
+function keyTyped() {
+		if (key === 'a') {
+			 background(255,0, 255);
+		} else if (key === 'b') {
+			 background(255,255, 255);
+		}
+}
+```
+
+So, you should have enough here to create a little interactive game or experience, try to hone your skills at it, and we'll continue next time with new topics!
 
