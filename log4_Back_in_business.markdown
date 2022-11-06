@@ -19,7 +19,7 @@ A variable is an information kept in memory on the computer. It is the sum of th
 
 Last, in order to tell the computer that we want to create a variable, we need the `let` keyword. It is used as bellow:
 
-![A variable](https://romamile.github.io/introcode/assets/variable_plus.png)
+<img src="[https://i.imgur.com/ZWnhY9T.png](https://romamile.github.io/introcode/assets/variable_plus.png)" width=50% height=50%>
 
 Here, we are telling the computer we are creating a variable called `myVariable`, and we are putting the value `45` in it. To be more precise, two things are happening at once:
  1. First we are **declaring** the variable. Giving it a name, but no content.
