@@ -13,7 +13,7 @@ They say that one picture is worth a thousand words, I still hope you're happy t
 text('These are the best of the possible words.', 10, 30);
 ```
 
-	What do we have here? A new function `text`, which -spoiler alert- draws text. Three parameters then, the last two are numbers, defining the position of the top left corner of the text you're going to display. A bit like for the shapes, especially `rect`. Now, hmmm a string of character surrounded by quote marks. We already found that, when we tried to import a picture. This is a new type of value: string, meant to define a text. So, we have string for text and number for ... well, numbers. You can use it in variable as well, for instance:
+What do we have here? A new function `text`, which -spoiler alert- draws text. Three parameters then, the last two are numbers, defining the position of the top left corner of the text you're going to display. A bit like for the shapes, especially `rect`. Now, hmmm a string of character surrounded by quote marks. We already found that, when we tried to import a picture. This is a new type of value: string, meant to define a text. So, we have string for text and number for ... well, numbers. You can use it in variable as well, for instance:
 
 
 ```javascript
