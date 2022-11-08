@@ -46,7 +46,7 @@ We will see later different types, but for now, let's keep with numbers. You can
 
 
 ```javascript
-let myVaribable, a, b;
+let myVariable, a, b;
 
 function setup() {
   	createCanvas(400, 400);
