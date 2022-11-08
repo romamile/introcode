@@ -12,7 +12,7 @@ Now, all of that is great, but for something on the screen, it's extremely stati
 Up until now, we only put static numbers for the parameters of our drawing functions. That created static shapes, no surprise here! Now, we need to replace those numbers with things that can change. To that effect, we use variables. Instead of using a value, we're using something that holds a value, and can be either accessed or modified. For instance :
 
 
-```javascrit
+```javascript
 	// We define/declare the variable here
 let myVariable;
 
