@@ -38,7 +38,7 @@ Open back your glitch project, and open the `index.html` file. Delete everything
 
   <head>
     <title>p5js Template</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.4.13/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.5.0/p5.min.js"></script>
     <script src="/script.js" defer></script>
   </head>
  
