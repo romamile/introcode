@@ -43,7 +43,7 @@ Open back your glitch project, and open the `index.html` file. Delete everything
     <script src="/script.js" defer></script>
   </head>
  
-  <body style="padding:0px">
+  <body style="margin:0px">
   </body>
  
 </html>
