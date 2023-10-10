@@ -64,22 +64,7 @@ Let's make some noooooise! Which is not so far from what we did with pictures. F
 
 First of all, click on the menu on the left on **Assets**. Then, a button on the top bar will appear, **Upload an asset**. Click on it, and upload any file you want. If you don't have music on your computer, you can search for some online. Once it's good, you'll see a new assets on the main panel. Click on it, and on the bottom of the new panel, you'll see **copy URL**. Click on it, and now you have that URL saved in your clipboard! You can use **paste** either with *Ctrl+V* or with your mouse to access it.
 
-Now, in order to use sound, we'll need another library. Go back to your HTML code, and juuuust bellow the line where you import the p5js code, you add one line with the p5js sound code. Now, you're header should look like:
-
-
-```html
-  <head>
-    <title>p5js Template</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.5.0/p5.min.js"></script>
-		<!-- That's how we write comments in HTML. Weird, I know!  -->
-		<!-- The line you need to add is the one bellow -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.5.0/addons/p5.sound.min.js"></script>
-    <script src="/script.js" defer></script>
-  </head>
-```
-
 Now that it's done, let's see how to trigger some sound!
-
 
 
 ```javascript
